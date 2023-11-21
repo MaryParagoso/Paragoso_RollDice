@@ -1,0 +1,77 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-image: url('https://img.pikbest.com/back_our/20220619/bg/10e53c67932b6.png!w700wp');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  image-rendering:pixelated;
+}
+
+.App {
+  text-align: center;
+}
+
+.RollDice-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  color: rgb(250, 251, 251);
+}
+
+.RollDice {
+  text-align: center;
+  padding-top: 30px;
+  text-shadow: 0 0 3px wheat;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  height: 50vh;
+}
+
+.Die {
+  font-size: 20em;
+  transition: transform 0.3s ease-in-out;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  transform-style: preserve-3d;
+}
+
+.Die-shaking {
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(50px, 50px) rotate(80deg); }
+  50% { transform: translate(0, 0) rotate(0eg); }
+  75% { transform: translate(-50px, 50px) rotate(-80deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+button {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 40px;
+  padding: 10px;
+  width: 200px;
+  border-radius: 10px;
+  transition: background-color 1s ease; 
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 1px 2px #000000;
+}
+
+button:hover {
+  background-color: #ffcc00; 
+}
+
+h1 {
+  color: #ffcc00;
+  font-size: 45px;
+}
